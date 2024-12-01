@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Engineering Notes Chatbot 📚🤖 (Name Chai Socheko xaina)
 
-## Getting Started
 
-First, run the development server:
+A modern web app to simplify access to engineering study materials and resources using an AI-powered chatbot. This project utilizes Next.js, Gemini AI, and shadcn/ui to deliver a seamless user experience for interacting with educational content.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Features
+1. Chatbot Interaction
+Ask questions to access curated study materials, PDFs, YouTube playlists, and learning tips.
+AI-powered responses tailored to user queries.
+Handles a wide range of queries, including subject-specific, semester-specific, and general study advice.
+2. Organized Resource Search
+Retrieves content directly from the scraped blog data.
+Provides links to PDFs, YouTube playlists, and additional resources.
+3. Advanced UI/UX
+Sleek and modern interface built using shadcn/ui.
+Intuitive chat design with typing indicators, error handling, and message history.
+4. Intelligent Search
+Implements vector similarity search using a vector database (e.g., Pinecone or Supabase).
+Context-aware responses by mapping user questions to the most relevant resources.
+5. Real-Time AI Responses
+Integrated with Google Gemini AI for generating intelligent and accurate responses.
+Optimized prompts to deliver concise and relevant answers.
+6. Scalable and Secure Deployment
+Hosted on Vercel for easy scaling and reliability.
+Includes analytics to track user interactions and monitor API usage.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 🛠️ Tech Stack
+**Frontend**
+1. **Next.js:** Framework for building the web app.
+2. **shadcn/ui:** Component library for creating beautiful and accessible UI.
+3. **TypeScript:** Ensures type safety and better developer experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Backend:**
+1. **Gemini AI API:** For natural language understanding and generating responses.
+2. **Supabase + pgvector:** Vector database for similarity search. Alternatively, Pinecone can be used for high-performance vector search. {Thinking ...}
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Web Scraping & Data Storage**
+1. **Scrapy/Puppeteer/BeautifulSoup:** Tools for extracting and cleaning data from the blog.
+2. **PostgreSQL:** For storing structured blog content (categories, subjects, PDFs, and YouTube links).
 
-## Learn More
+**Deployment**
+1. Vercel: For hosting the Next.js app.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Fun Part:
 
-## Deploy on Vercel
+We will be heavily rely on https://bctengineeringnotes.blogspot.com/ for scrapping and collecting data.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+### Project is just started on Dec 1,2024. Lets See When it will be completed.
+
+### By : Not a Experienced Developer 😂
